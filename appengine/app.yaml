@@ -34,7 +34,7 @@ handlers:
   static_dir: static
   secure: always
 
-# Closure library for uncompiled Blockly.
+# Closure library for uncompressed Blockly.
 - url: /closure-library
   static_dir: closure-library
   secure: always
@@ -74,8 +74,14 @@ skip_files:
 - ^(.*/)?\..*$
 # Custom skip patterns.
 - ^static/appengine/.*$
-- ^static/apps/json/.*$
-- ^static/apps/_soy/.+\.jar$
+- ^static/demos/plane/soy/.+\.jar$
+- ^static/demos/plane/template.soy$
+- ^static/demos/plane/xlf/.*$
 - ^static/i18n/.*$
 - ^static/msg/json/.*$
 - ^.+\.soy$
+- ^closure-library/.*_test.html$
+- ^closure-library/.*_test.js$
+- ^closure-library/closure/bin/.*$
+- ^closure-library/doc/.*$
+- ^closure-library/scripts/.*$
